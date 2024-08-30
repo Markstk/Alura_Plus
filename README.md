@@ -4,7 +4,7 @@ Alura Plus é um projeto de página web para um serviço de assinatura online, c
 
 ## Pré-visualização
 
-<!-- Substitua pelo caminho real da imagem de pré-visualização, se disponível -->
+https://alura-plus-pi-bice.vercel.app/
 
 ## Funcionalidades
 

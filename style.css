@@ -7,6 +7,34 @@
     --botao-azul-efeito: #3c92fa;
 }
 
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 100%; /* Muda para uma coluna única em telas menores */
+        grid-template-rows: auto;
+    }
+
+    .principal {
+        background-size: cover; /* Garante que a imagem de fundo cubra todo o espaço */
+    }
+
+    .container__caixa,
+    .secundario {
+        margin: 0 2em; /* Reduz a margem para evitar quebras no layout */
+    }
+
+    .descricao__titulo {
+        font-size: 32px; /* Reduz o tamanho da fonte para caber em telas menores */
+    }
+
+    .secundario__imagem {
+        width: 100%; /* Aumenta a largura da imagem para 100% */
+    }
+
+    .rodape {
+        margin: 2em 1em; /* Ajusta a margem para não ocupar muito espaço */
+    }
+}
+
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);

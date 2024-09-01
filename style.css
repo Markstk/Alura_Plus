@@ -65,7 +65,8 @@ body {
 .container__botao {
     background-color: var(--botao-azul);
     border-radius: 5px;
-    padding: 1em;
+    padding: 0.8em;  /* Ajusta o padding para uma melhor visualização em telas menores */
+    font-size: 1rem; /* Usa rem para um tamanho de fonte adaptável */
     color: var(--branco-principal);
     display: block;
     text-decoration: none;
@@ -83,7 +84,7 @@ body {
 }
 
 .container__titulo {
-    font-size: 28px;
+    font-size: 1.5rem; /* Reduz o tamanho da fonte em dispositivos menores */
     font-weight: 700;
 }
 
@@ -96,12 +97,13 @@ body {
 }
 
 .secundario__imagem {
-    width: 80%;
+    width: 100%; /* Garante que a imagem se ajuste ao tamanho do container pai */
+    max-width: 500px; /* Define uma largura máxima para grandes telas */ 
 }
 
 .secundario {
+    margin: 0 5vw; /* Usa viewport width para margens, adaptando ao tamanho da tela */
     align-items: center;
-    margin: 0 10em;
 }
 
 .descricao__titulo {
@@ -155,6 +157,8 @@ body {
     justify-content: center;
     list-style-type: none;
     margin-top: 1em;
+    flex-direction: column; /* Alinha os itens em uma coluna em telas menores */
+    align-items: center;
 }
 
 .lista__link a{
@@ -166,7 +170,7 @@ body {
 .rodape__texto {
     margin: 1em 0;
     color: var(--cinza-secundario);
-    font-size: 14px;
+    font-size: 0.875rem; /* Ajusta o tamanho da fonte para legibilidade */
 }
 
 .lista__link a:hover {
